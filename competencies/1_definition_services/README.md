@@ -91,7 +91,7 @@ So, in simple terms:
 
 6. **API Gateways:** An API gateway acts as a single entry point for managing and routing API requests. Tools like Kong or AWS API Gateway help in managing frontend-to-backend communication.
 
-As for frontend utilization by clients:
+**As for frontend utilization by clients:**
 
 1. **API Consumption:** Clients interact with backend services through well-defined APIs. These APIs expose endpoints that clients can call to perform specific actions or retrieve information.
 
