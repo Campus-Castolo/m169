@@ -118,3 +118,9 @@ In summary, the backend deployment involves containerization, orchestration, CI/
 - **Registry:** A centralized repository for storing and managing container images, facilitating their distribution and deployment across different systems.
 
 ## 6. Understands the dependencies of services and their deployment in a local infrastructure (examples: persistent data storage, networking, and others).
+
+- **Persistent Data Storage:** This encompasses the strategy and mechanisms for storing data persistently, ensuring that data remains available even after services or systems restart. Common technologies include databases and storage solutions.
+
+- **Networking:** Refers to the configuration and management of communication pathways between different services and components within the local infrastructure. It involves considerations such as protocols, routing, and network security.
+
+- **Other Dependencies:** Encompasses various dependencies that services might have, including external libraries, APIs, or frameworks. Managing these dependencies ensures smooth functioning of the services in the local infrastructure.
