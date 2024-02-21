@@ -1,6 +1,9 @@
 # m169
 Services mit Containern bereistellen
 
+## [Wiki](https://github.com/Campus-Castolo/m169/wiki)
+Logs, Goals, Theory and application
+
 ## [Guidelines](Guidelines.md)
 Guidelines for the project
 
