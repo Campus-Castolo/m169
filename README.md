@@ -20,3 +20,5 @@ All Weekly Goals and Daily Logs Documented
 
 ## [Projectdocumentation]()
 Scope of Delivery, Realization of Delivery, Functionality of Delivery, Security Aspects, Testing, Closing Statement
+
+---
