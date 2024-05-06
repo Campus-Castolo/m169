@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  m169.project.db:
+    image: mariadb
+    restart: always
+    ports: 
+      - 3306:3306
+    networks:
+      - m169-project-internal-compose
+    environment:
+      MYSQL_ROOT_PASSWORD: abcd12s8rkds
+      MYSQL_DATABASE: m169database
+      MYSQL_USER: m169databaseadmin
+      MYSQL_PASSWORD: abcd12s8rkds
+    volumes:
+      - db_data:/var/lib/mysql
+
+  m169.project.phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 48080:80
+    networks:
+      - m169-project-internal-compose
+    environment:
+      PMA_HOST: m169.project.db
+      MYSQL_ROOT_PASSWORD: abcd12s8rkds
+
+  m169.project.application:
+    image: 57f132ee9bd1afa0d2fff886b89b8a7fa02bb7e534db2d8e965671e76f0c28af
+    ports:
+      - 5000:5000
+      - 8080:80
+    expose:
+      - 5000
+      - 80
+      - 3306
+    depends_on:
+      - m169.project.db
+      - m169.project.phpmyadmin
+    networks:
+      - m169-project-internal-compose
+
+volumes:
+  db_data:
+    name: db_data
+
+networks:
+  m169-project-internal-compose:
+    name: m169-project-internal-compose
+

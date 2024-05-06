@@ -1,0 +1,4 @@
+[06/May/2024:09:40:20 +0000] 400 - GET http localhost "/" [Client 192.168.48.1] [Length 654] [Gzip -] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" "-"
+[06/May/2024:09:40:21 +0000] 400 - GET http localhost "/favicon.ico" [Client 192.168.48.1] [Length 654] [Gzip -] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" "http://localhost:443/"
+[06/May/2024:09:41:32 +0000] 200 - GET http localhost "/" [Client 192.168.48.1] [Length 568] [Gzip 1.86] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" "-"
+[06/May/2024:10:27:20 +0000] 404 - GET http localhost "/login" [Client 192.168.48.1] [Length 183] [Gzip 3.21] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" "-"

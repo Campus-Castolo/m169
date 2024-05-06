@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/uikit.min.css') }}">
+  <script src="{{ url_for('static', filename='js/uikit.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/uikit-icons.min.js') }}"></script>
+  <title>TrustGuard Sample Website</title>
+</head>
+
+<body>
+
+    <div class="uk-container uk-margin-top">
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="/">Home</a></li>
+                    <li><a href="/fetch">Fetch</a></li>
+                    <li><a href="/inserter">Inserter</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+  
+    <main>
+      <br>
+      
+        <div class="uk-width-1-4 uk-position-center">
+          <div class="uk-card uk-card-default uk-card-body">
+            <form method="POST" action="/inserter">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" required><br><br>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+              <label for="number">Number:</label><br>
+              <input type="text" id="number" name="number" required><br><br>
+              <label for="website">Website:</label><br>
+              <input type="text" id="website" name="website" required><br><br>
+              <button type="submit">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+    <footer class="uk-text-center uk-margin-medium-top">
+    </footer>
+  </div>
+</body>
+</html>

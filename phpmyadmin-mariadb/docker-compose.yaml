@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  m169.project.db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: abcd12s8rkds
+      MYSQL_DATABASE: m169database
+      MYSQL_USER: m169databaseadmin
+      MYSQL_PASSWORD: abcd12s8rkds
+    volumes:
+      - db_data:/var/lib/mysql
+
+  m169.project.phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: m169.project.db
+      MYSQL_ROOT_PASSWORD: abcd12s8rkds
+
+volumes:
+  db_data:
