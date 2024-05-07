@@ -1,0 +1,17 @@
+networks:
+  m169-project-internal:
+    external: true
+  m169-project-external:
+    external: true
+
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    volumes:
+      - ./data:/app/data
+    ports:
+      - 3001:3001
+    restart: unless-stopped
+    networks:
+      - m169-project-internal
+      - m169-project-external
