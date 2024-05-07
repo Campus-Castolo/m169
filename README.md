@@ -34,3 +34,6 @@ All Weekly Goals and Daily Logs Documented
 
 ---
 
+## Project documentation
+
+### [full comprehensive guide](m169-lb3-full-comprehensive-guide.pdf)
