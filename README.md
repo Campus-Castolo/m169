@@ -1,5 +1,7 @@
 # m169
-Services mit Containern bereistellen
+deploy services in containers
+
+this project has been conducted by @CastoloLee
 
 ---
 
@@ -18,8 +20,17 @@ All Weekly Goals and Daily Logs Documented
 
 ---
 
-## [Projectdocumentation](/m169-project/m169-project-documentation/readme.md)
-Scope of Delivery, Realization of Delivery, Functionality of Delivery, Security Aspects, Testing, Closing Statement
+## Project files
+
+### [Flaskapplication](flask-application/readme.md)
+
+### [nginx-reverse-proxy-manager](nginx-reverse-proxy-manager/readme.md)
+
+### [php mariadb flask](php-mariadb-flask/readme.md)
+
+### [phpmyadmin and mariadb](phpmyadmin-mariadb/readme.md)
+
+### [uptime kuma](uptimekuma/readme.md)
 
 ---
 
